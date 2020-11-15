@@ -1,0 +1,559 @@
+@import "normalize.css";
+@import url("https://fonts.googleapis.com/css2?family=Aleo&family=Josefin+Sans:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: 0.2s ease-in-out;
+}
+
+.inner {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1024px) {
+  .inner {
+    padding: 0 30px;
+  }
+}
+
+header {
+  background-image: url("../img/Image.png");
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 250px;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+}
+header h1 {
+  font-weight: 700;
+  font-size: 48px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  line-height: 26px;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 426px) {
+  header h1 {
+    font-size: 36px;
+  }
+}
+header h5 {
+  font-weight: 400;
+  font-size: 22px;
+  text-align: center;
+  letter-spacing: 0.31em;
+  line-height: 26px;
+}
+@media screen and (max-width: 426px) {
+  header h5 {
+    font-size: 18px;
+  }
+}
+header .cls-1 {
+  fill: #fff;
+  fill-rule: evenodd;
+}
+header #searchform {
+  width: 59%;
+  background: white;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+}
+@media screen and (max-width: 426px) {
+  header #searchform {
+    width: 80%;
+  }
+}
+header #searchform input {
+  width: 78%;
+  text-align: center;
+  border: none;
+  overflow: hidden;
+  outline: none;
+  font-size: 14px;
+  color: #999999;
+  letter-spacing: 0.2em;
+}
+@media screen and (max-width: 426px) {
+  header #searchform input {
+    letter-spacing: 0.1em;
+  }
+}
+header #searchform .search {
+  position: relative;
+  top: 5px;
+  left: 10px;
+}
+@media screen and (max-width: 768px) {
+  header #searchform .search {
+    left: 0;
+  }
+}
+header #searchform :focus::placeholder {
+  color: transparent;
+}
+header #searchform button {
+  width: 22%;
+  height: 53px;
+  background: #5474fd;
+  float: right;
+  outline: none;
+  border: none;
+  font-family: "Aleo", serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+@media screen and (max-width: 426px) {
+  header #searchform button span {
+    display: none;
+  }
+}
+header p {
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  margin-top: 115px;
+}
+header .scroll:before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid white;
+  border-left: 2px solid wheat;
+  transform: rotate(-135deg);
+  display: block;
+  margin: 15px auto 0;
+}
+header nav {
+  width: 100%;
+  background: #5474fd;
+  position: absolute;
+  bottom: 0;
+}
+header nav .menu {
+  padding: 40px 0 50px;
+}
+header nav .menu a {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  float: left;
+  text-decoration: none;
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  header nav .menu a {
+    display: block;
+    float: none;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+header nav .menu ul {
+  list-style: none;
+  float: right;
+}
+@media screen and (max-width: 768px) {
+  header nav .menu ul {
+    float: none;
+  }
+}
+@media screen and (max-width: 426px) {
+  header nav .menu ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
+header nav .menu ul li {
+  display: inline-block;
+  margin-left: 40px;
+}
+@media screen and (max-width: 426px) {
+  header nav .menu ul li {
+    margin-left: 0;
+  }
+}
+header nav .menu ul a {
+  text-decoration: none;
+  color: white;
+  font-family: "Aleo", serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  border-bottom: 2px solid transparent;
+}
+header nav .menu ul a:hover {
+  border-bottom: 2px solid white;
+}
+
+.why-choose-us {
+  background-image: url("../img/Rectangle 7.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 120px 0;
+}
+.why-choose-us .container {
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 426px) {
+  .why-choose-us .container {
+    flex-direction: column;
+  }
+}
+.why-choose-us .container .info {
+  width: 45%;
+  padding-top: 90px;
+  padding-bottom: 42px;
+}
+@media screen and (max-width: 426px) {
+  .why-choose-us .container .info {
+    width: 90%;
+    padding-top: 0;
+  }
+}
+.why-choose-us .container .info h2 {
+  font-size: 36px;
+  font-family: "Aleo", serif;
+  font-weight: 400;
+  line-height: 36px;
+}
+@media screen and (max-width: 426px) {
+  .why-choose-us .container .info h2 {
+    font-size: 32px;
+  }
+}
+.why-choose-us .container .info p {
+  font-family: "Josefin Sans", sans-serif;
+  color: #e8e8e8;
+  line-height: 26px;
+  margin: 55px 0;
+}
+.why-choose-us .container .img {
+  width: 45%;
+}
+@media screen and (max-width: 426px) {
+  .why-choose-us .container .img {
+    width: 96%;
+  }
+}
+.why-choose-us .container img[alt=nature] {
+  margin-right: 125px;
+}
+.why-choose-us .container img[alt=nature]:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 18px 1px rgba(0, 0, 0, 0.46);
+}
+.why-choose-us .container img[alt=mountains] {
+  float: right;
+}
+.why-choose-us .container img[alt=mountains]:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 18px 1px rgba(0, 0, 0, 0.46);
+}
+
+.button {
+  background: linear-gradient(45deg, #496bfe 40%, #5474fd 34%);
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Aleo", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 225px;
+  height: 60px;
+  letter-spacing: 0.075em;
+  transition: all 500ms ease;
+  position: relative;
+}
+.button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 60px;
+  background: #496bfe;
+  transition: all 1s ease;
+}
+.button:hover:before {
+  width: 100%;
+}
+.button span {
+  z-index: 1;
+}
+
+.icons {
+  width: 100%;
+  background: #333333;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+.icons .container {
+  display: flex;
+  justify-content: center;
+  width: 67%;
+  margin: 0 auto;
+}
+.icons .container .search {
+  fill: #5474fd;
+  fill-rule: evenodd;
+}
+.icons .container .check {
+  fill: #ff6363;
+  fill-rule: evenodd;
+}
+.icons .container .ok {
+  fill: #00a2ff;
+  fill-rule: evenodd;
+}
+.icons .container .shape {
+  fill: none;
+  stroke: #fff;
+  stroke-linecap: round;
+  stroke-width: 1px;
+  stroke-dasharray: 0.001 5;
+  fill-rule: evenodd;
+  opacity: 0.5;
+}
+.icons .container .icon {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  bottom: 56px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1024px) {
+  .icons .container .icon {
+    width: 82%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .icons .container .icon {
+    width: 63%;
+  }
+}
+@media screen and (max-width: 426px) {
+  .icons .container .icon {
+    width: 48%;
+  }
+}
+.icons .container .icon svg:hover {
+  transform: scale(1.1);
+}
+.icons .container .icon div {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.icons .title {
+  margin: 0 auto;
+  width: 78%;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Aleo", serif;
+  font-size: 36px;
+  color: #e8e8e8;
+  font-weight: 400;
+  transform: translate(0, -50px);
+}
+@media screen and (max-width: 768px) {
+  .icons .title {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .icons .title {
+    font-size: 18px;
+    width: 100%;
+  }
+}
+
+.booking {
+  background-image: url("../img/Rectangle 414.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 230px 0 100px 0;
+}
+.booking__container {
+  width: 48%;
+  background-color: rgba(25, 25, 25, 0.9);
+  color: #e8e8e8;
+  font-family: "Josefin Sans", sans-serif;
+  padding: 50px 30px;
+  line-height: 26px;
+}
+@media screen and (max-width: 426px) {
+  .booking__container {
+    width: 100%;
+  }
+}
+.booking__container h5 {
+  font-size: 20px;
+  letter-spacing: 0.075em;
+  font-weight: 400;
+}
+.booking__container h3 {
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: 23px 0;
+  font-weight: 400;
+}
+.booking__container p {
+  margin-bottom: 40px;
+}
+
+.booking-2 {
+  background-image: url("../img/Rectangle 4141.png");
+}
+.booking-2 .inner {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tourist {
+  background-image: url("../img/Rectangle 4142.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 120px;
+  padding-bottom: 200px;
+}
+.tourist h2 {
+  font-family: "Aleo", serif;
+  font-size: 36px;
+  line-height: 26px;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  font-weight: 400;
+}
+@media screen and (max-width: 426px) {
+  .tourist h2 {
+    font-size: 32px;
+  }
+}
+.tourist .container {
+  width: 100%;
+  background: #333333;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .tourist .container {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+}
+@media screen and (max-width: 426px) {
+  .tourist .container {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .tourist .container img {
+    width: 100%;
+  }
+}
+.tourist .container article {
+  width: 55%;
+  padding-right: 40px;
+}
+@media screen and (max-width: 1024px) {
+  .tourist .container article {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .tourist .container article {
+    width: 60%;
+    margin-top: 20px;
+    padding-right: 0;
+  }
+}
+.tourist .container article h2 {
+  color: #fefefe;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  margin-bottom: 25px;
+  display: inline-block;
+}
+.tourist .container article p {
+  color: #e8e8e8;
+  line-height: 26px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+}
+.tourist .container article .fa-quote-left {
+  color: #5474fd;
+  position: relative;
+  bottom: 10px;
+  right: 5px;
+  font-size: 20px;
+}
+
+footer {
+  background: #232323;
+  width: 100%;
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
+  padding-top: 120px;
+  padding-bottom: 35px;
+  text-align: center;
+  line-height: 26px;
+}
+@media screen and (max-width: 768px) {
+  footer {
+    padding-top: 60px;
+  }
+}
+footer a {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 70;
+  padding-bottom: 10px;
+  text-decoration: none;
+  color: white;
+}
+footer .social {
+  width: 160px;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto 0;
+}
+footer .social a {
+  color: white;
+  font-size: 16px;
+}
+footer .social a:hover {
+  cursor: pointer;
+}
+footer .fa-linkedin-in {
+  color: #5474fd;
+}
+
+/*# sourceMappingURL=main.css.map */
